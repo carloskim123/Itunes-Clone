@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css"/>
+    <title>iTunes Music Search</title>
+  </head>
+  <body>    
+    <header>
+      <h1>Find Your Groove: Explore Music Genres and Varieties</h1>
+    </header>
+    <div class="toggle-container">
+      <input type="checkbox" id="toggle" class="toggle" checked>
+      <label for="toggle" class="toggle-label"></label>
+    </div>
+    <div class="container">
+      <div class="search">
+        <input type="text" id="input" placeholder="Search for music..." value="ed sheeran">
+        <button id="search">Search</button>
+      </div>
+      <div id="loading" class="loading">Loading...</div>
+      <div id="error" class="error"></div>
+      <div id="results" class="results">
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
