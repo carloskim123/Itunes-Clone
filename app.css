@@ -166,7 +166,7 @@ header h1 {
 
 .dark-mode {
   background: var(--dark-background);
-  height: 200vh;
+  height: 1000vh;
   transition: var(--transition-duration);
 }
 
