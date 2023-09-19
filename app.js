@@ -5,6 +5,7 @@ const error = document.getElementById('error');
 const results = document.getElementById('results');
 const toggle = document.getElementById('toggle');
 const body = document.querySelector('html');
+const resultTotal = 6;
 
 const debounce = (func, delay) => {
   let timeoutId;
@@ -28,7 +29,7 @@ const searchMusic = () => {
   loading.style.display = 'block';
   error.style.display = 'none';
   results.innerHTML = '';
-  fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=15`)
+  fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=${resultTotal}`)
     .then(response => {
       loading.style.opacity = 0;
       if (!response.ok) {
